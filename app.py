@@ -45,7 +45,7 @@ def predict():
         
         if file and allowed_file(file.filename):
             filename = file.filename
-            file_path= os.path.join('static/images', filename)
+            file_path= os.path.join('Static/images', filename)
             file.save(file_path)
             # img = read_image(file_path)
             img=cv2.imread(file_path)
